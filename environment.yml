@@ -1,0 +1,13 @@
+# conda env create -f environment.yml
+name: motaustin-env
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.6
+  - pip # may be required to install pymotmetrics
+  - numpy
+  - pandas
+  - jupyterlab
+  
