@@ -10,6 +10,7 @@ Researchers at the Texas Advanced Computing Center, in conjunction with the City
 * [numpy](https://numpy.org/)
 * [pandas](https://pandas.pydata.org/)
 * [opencv](https://opencv.org/)
+* [matplotlib](https://matplotlib.org/3.1.1/index.html)
 * [MOTChallenge 17 Data](https://motchallenge.net/data/MOT17/)
 
 ### Installation
@@ -26,6 +27,8 @@ $ pip install -r requirements.txt
 ```
 
 #### Conda
+**Conda is not supported until opencv 4.3.0+ is available**
+
 Use conda to create a virtual environment and install the necessary dependencies
 
 ```

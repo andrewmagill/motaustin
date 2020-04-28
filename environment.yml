@@ -10,4 +10,5 @@ dependencies:
   - numpy
   - pandas
   - jupyterlab
-  
+  - opencv >= 4.3.0
+  - matplotlib

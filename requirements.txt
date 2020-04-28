@@ -1,5 +1,6 @@
 numpy
 pandas
-opencv-python
-opencv-contrib-python
+opencv-python==3.4.2.17
+opencv-contrib-python==3.4.2.17
 jupyterlab
+matplotlib
