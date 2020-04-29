@@ -12,6 +12,7 @@ Researchers at the Texas Advanced Computing Center, in conjunction with the City
 * [opencv](https://opencv.org/)
 * [matplotlib](https://matplotlib.org/3.1.1/index.html)
 * [MOTChallenge 17 Data](https://motchallenge.net/data/MOT17/)
+* [pymot](https://github.com/Videmo/pymot)
 
 ### Installation
 
@@ -35,6 +36,28 @@ Use conda to create a virtual environment and install the necessary dependencies
 $ conda env create -f environment.yml
 $ activate motaustin-env
 ```
+
+### Usage
+
+1. Clone this repository ```$ git clone git@github.com:andrewmagill/motaustin.git```
+
+2. Clone Videmo's pymot repository ```$ git clone https://github.com/Videmo/pymot```
+
+3. Download the [MOTChallenge 17 dataset](https://motchallenge.net/data/MOT17/)
+
+4. Move the image sequence files to the img1/ directory
+
+5. Move your object detections file ```det.txt``` to the det/ directory
+
+6. Move the ground truth file ```gt.txt``` to the gt/ directory
+
+7. Modify the configuration file ```conf/config.ini``` with your parameters
+
+8. Execute the simple_tracking notebook
+
+9. Execute the motcsv_to_sloth notebook to convert you results to json
+
+10. Evaluate your results with pymot ``` $ python pymot.py -a [GROUNDTRUTH] -b [HYPOTHESIS]```
 
 ### References
 
