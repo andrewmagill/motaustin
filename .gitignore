@@ -1,5 +1,9 @@
-img1/
 output/
 .ipynb_checkpoints/
 
 original.ipynb
+*.jpeg
+*.jpg
+*.mp4
+*.avi
+*.divx
