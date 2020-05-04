@@ -1,6 +1,6 @@
 ## MOTAustin
 
-Researchers at the Texas Advanced Computing Center, in conjunction with the City of Austin, have published an analysis of pedestrian safety based on video captured at city intersections [1](#austin). The analysis by Xu et al. used a two step process of detection and tracking to track seven classes of objects (person, car, bus truck, bicycle, motorcycle, traffic light). The authors state in their discussion that tracking of pedestrians proved the most difficult task. This is an attempt to improve the analysis with small modifications to the tracking algorithm.
+Researchers at the Texas Advanced Computing Center, in conjunction with the City of Austin, have published an analysis of pedestrian safety based on video captured at city intersections [1](#austin). The analysis by Xu et al. uses a two step process of detection and tracking to track seven classes of objects (person, car, bus truck, bicycle, motorcycle, traffic light). The authors state in their discussion that tracking of pedestrians proved the most difficult task. This is an attempt to improve the analysis with small modifications to the tracking algorithm.
 
 ### Requirements
 
@@ -11,8 +11,9 @@ Researchers at the Texas Advanced Computing Center, in conjunction with the City
 * [pandas](https://pandas.pydata.org/)
 * [opencv](https://opencv.org/)
 * [matplotlib](https://matplotlib.org/3.1.1/index.html)
+* [scikit-image](https://scikit-image.org/)
 * [MOTChallenge 17 Data](https://motchallenge.net/data/MOT17/)
-* [pymot](https://github.com/Videmo/pymot)
+* [py-motmetrics](https://github.com/cheind/py-motmetrics)
 
 ### Installation
 
@@ -53,11 +54,11 @@ $ activate motaustin-env
 
 7. Modify the configuration file ```conf/config.ini``` with your parameters
 
+8. Name you output hypotheses file the same as the sequence name (i.e. MOT17-04-FRCNN)
+
 8. Execute the simple_tracking notebook
 
-9. Execute the motcsv_to_sloth notebook to convert you results to json
-
-10. Evaluate your results with pymot ``` $ python pymot.py -a [GROUNDTRUTH] -b [HYPOTHESIS]```
+9. Evaluate your results with py-motmetrics ``` $ python -m motmetrics.apps.evaluateTracking [TRAIN] [TEST]```
 
 ### References
 
