@@ -12,3 +12,6 @@ dependencies:
   - jupyterlab
   - opencv >= 4.3.0
   - matplotlib
+  - pip
+  - pip:
+      - motmetrics
