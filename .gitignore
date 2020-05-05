@@ -1,5 +1,12 @@
-img1/
 output/
+MOT20/
 .ipynb_checkpoints/
 
 original.ipynb
+*.jpeg
+*.jpg
+*.png
+*.mp4
+*.avi
+*.divx
+*.zip

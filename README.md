@@ -1,6 +1,6 @@
 ## MOTAustin
 
-Researchers at the Texas Advanced Computing Center, in conjunction with the City of Austin, have published an analysis of pedestrian safety based on video captured at city intersections [1](#austin). The analysis by Xu et al. used a two step process of detection and tracking to track seven classes of objects (person, car, bus truck, bicycle, motorcycle, traffic light). The authors state in their discussion that tracking of pedestrians proved the most difficult task. This is an attempt to improve the analysis with small modifications to the tracking algorithm.
+Researchers at the Texas Advanced Computing Center, in conjunction with the City of Austin, have published an analysis of pedestrian safety based on video captured at city intersections [1](#austin). The analysis by Xu et al. uses a two step process of detection and tracking to track seven classes of objects (person, car, bus truck, bicycle, motorcycle, traffic light). The authors state in their discussion that tracking of pedestrians proved the most difficult task. This is an attempt to improve the analysis with small modifications to the tracking algorithm.
 
 ### Requirements
 
